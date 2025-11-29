@@ -1,4 +1,4 @@
-# Advent of Code - 2024 - Using Kotlin
+# Advent of Code - 2025 - Using Kotlin
 
 Here are my attempts at the Advent of Code 2025 challenges, all using Kotlin.
 
