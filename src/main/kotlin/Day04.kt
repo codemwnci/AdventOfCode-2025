@@ -41,18 +41,5 @@ class Day04 {
         }
 
         doRemove(grid).printAnswer()
-
-// Implemented initially using mutability, then updated with recursion (above) to make it immutable
-//        var g = grid
-//        var count = 0
-//
-//        while (true) {
-//            val rem = toRemove(g)
-//            if (rem.isEmpty()) break
-//            count += rem.count()
-//
-//            g = g.mapIndexed { y, row -> row.mapIndexed { x, _ -> if (YX(y,x) in rem) '.' else g[y][x] }.toCharArray() }.toTypedArray()
-//        }
-//        count.printAnswer()
     }
 }
