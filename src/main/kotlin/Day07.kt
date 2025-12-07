@@ -10,11 +10,11 @@ class Day07 {
 
     private val file = File("inputs/day07.txt")
     private val grid = file.readLines().map { it.map { it } }
-    private val start = grid[0].indexOf('S').let { YX(0,it) }
+    private val start = YX(0, grid[0].indexOf('S'))
 
     fun puzzle1() {
         // This commented code is the "mutable" version. this is definitely more readable than the immutable version below
-        // but the results are the same (and my goals is to maximise immutability where possible.
+        // but the results are the same (and my goals is to maximise immutability where possible).
 //        var splitCount = 0
 //        grid.indices.fold(setOf(start)) { beams, y ->
 //            if (y == grid.lastIndex) beams
